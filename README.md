@@ -1,12 +1,7 @@
 # DATE PREDICTOR FROM SCRATCH
 This program was written with python using the built in function. OS module was not used.
 # USAGE
-
-Usage Function -> notifies users to on how to use the program.
-If the user enters invalid date (YYYYMMDD) or invalid pramater
-e.g -step instead of --step OR 20191301 -> there are only 12 months in a year OR 20190155
-
-'''Usage: a1_hwhamidi.py (YYYYMMDD) +/-Day
+Usage: Date_Predictor.py (YYYYMMDD) +/-Day
 e.g. -> 20190101 +1 = 20190102
 *Using --step parameter*
 [./Date_Predictor.py --step (YYYYMMDD) +/- Days]

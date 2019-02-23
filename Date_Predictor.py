@@ -1,15 +1,9 @@
 #! /usr/bin/env python3
 
-'''OPS435 Assignment 1 - Winter 2019
-Program: a1_hwhamidi.py
+'''Program: Date_Predictor.py
 Author: "Hekmat Hamidi"
 The python code in this file (a1_hwhamidi.py) is original work written by
-"Hekmat Hamidi". No code in this file is copied from any other source
-except those provided by the course instructor, including any person,
-textbook, or on-line resource. I have not shared this python script
-with anyone or anything except for submission for grading.
-I understand that the Academic Honesty Policy will be enforced and
-violators will be reported and appropriate action will be taken.'''
+"Hekmat Hamidi".'''
 
 import sys
 

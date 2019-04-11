@@ -1,4 +1,8 @@
-# Tomorrow/Yesterday Assignment 1
+# OPS435 Assignments  (Winte Term of 2019)
+
+All the assignment for OPS435, class of 2019
+
+# Assignment 1
 This program was written with python using the built in function. OS module was not used.
 # USAGE
 Usage: Date_Predictor.py (YYYYMMDD) +/-Day

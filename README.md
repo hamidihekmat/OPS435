@@ -47,5 +47,5 @@ optional arguments:
   -u USER, --user USER  usage report for the given user name
   -v, --verbose         tune on output verbosity
 
-Copyright 2019 - Hekmat Hamidi
+
 

@@ -5,6 +5,8 @@ Usage: Date_Predictor.py (YYYYMMDD) +/-Day
 
 e.g. -> 20190101 +1 = 20190102
 
+
+
 *Using --step parameter*
 [./Date_Predictor.py --step (YYYYMMDD) +/- Days]
 e.g. -> [./Date_Predictor.py --step 20190101 5]

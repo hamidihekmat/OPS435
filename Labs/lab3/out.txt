@@ -1,0 +1,128 @@
+#!/usr/bin/env python3
+
+#return_text_value() function
+def return_text_value():
+    name = 'Terry'
+    greeting = 'Good Morning ' + name
+    return greeting
+text = return_text_value()
+print(text)
+
+#return_number_value() function
+def return_number_value():
+    num1 = 10
+    num2 = 5
+    num3 = num1 + num2
+    return num3
+number = return_number_value()
+print('my number is ' + str(number))
+
+#Main Program
+
+
+if __name__ == '__main__':
+    print('python code')
+    text = return_text_value()
+    print(text)
+    number = return_number_value()
+    print(str(number)) 
+#!/usr/bin/env python3
+
+def sum_numbers(number1, number2):
+	return number1 + number2
+    #Make this function add number1 and number2 and return the value
+
+def subtract_numbers(number1, number2):
+	return number1 - number2
+
+def multiply_numbers(number1, number2):
+	return number1 * number2
+
+if __name__ == '__main__':
+	print(sum_numbers(10, 5))
+	print(subtract_numbers(10, 5))
+	print(multiply_numbers(10, 5))
+#!/usr/bin/env python3
+
+def operate(number1, number2, operator):
+	if operator == 'add':
+		return number1 + number2
+	elif operator == 'subtract':
+		return number1 - number2
+	elif operator == 'multiply':
+		return number1 * number2
+	return 'Error: function operator can be "add", "subtract", or "multiply"'
+if __name__ == '__main__':
+	print(operate(10, 5, 'add'))
+	print(operate(10, 5, 'subtract'))
+	print(operate(10, 5, 'multiply'))
+	print(operate(10, 5, 'divide'))
+#!/usr/bin/env python3 
+import os
+import subprocess
+
+
+p = subprocess.Popen(["df -h | grep /$ | awk '{print $4}'"], stdout = subprocess.PIPE, stdin = subprocess.PIPE, stderr = subprocess.PIPE, shell=True)
+
+def free_space():
+	output = p.communicate()
+	stdout = output[0].decode('utf-8').strip()
+	return stdout
+if __name__ == '__main__':
+	print(free_space())
+#!/usr/bin/env python3
+
+# Create the list called "my_list" here, not within any function defined below.
+# That makes it a global variable. We'll talk about that in another lab.
+mylist = [100, 200, 300, 'six hundred']
+
+def give_list():
+	return mylist
+    # Does not accept any arguments
+    # Returns all of the global variable my_list unchanged
+
+def give_first_item():
+    # Does not accept any arguments
+    # Returns a single string that is the first item in the global my_list
+	return str(mylist[0])
+
+def give_first_and_last_item():
+	return [mylist[0], mylist[-1]] 
+    # Does not accept any arguments
+    # Returns a list that includes the first and last items in the global my_list
+
+def give_second_and_third_item():
+	return mylist[1:3]
+    # Does not accept any arguments
+    # Returns a list that includes the second and third items in the global my_list
+
+if __name__ == '__main__':   # This section also referred to as a "main code"
+	print(give_list())
+	print(give_first_item())
+	print(give_first_and_last_item())
+	print(give_second_and_third_item())
+#!/usr/bin/env python3
+
+# Place my_list below this comment (before the function definitions)
+my_list = [1, 2, 3, 4, 5]
+
+
+def add_item_to_list(ordered_list):
+    # Appends new item to end of list with the value (last item + 1)
+	ordered_list.append(my_list[-1] + 1)
+	return ordered_list
+def remove_items_from_list(ordered_list, items_to_remove):
+	for num in items_to_remove:
+		ordered_list.remove(num)
+	return ordered_list
+    # Removes all values, found in items_to_remove list, from my_list
+
+# Main code
+if __name__ == '__main__':
+    print(my_list)
+    add_item_to_list(my_list)
+    add_item_to_list(my_list)
+    add_item_to_list(my_list)
+    print(my_list)
+    remove_items_from_list(my_list, [1,5,6])
+    print(my_list)

@@ -1,0 +1,1 @@
+print itertools.__doc__
